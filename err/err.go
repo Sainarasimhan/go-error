@@ -220,3 +220,12 @@ func String(err error) string {
 	}
 	return s.Message()
 }
+
+//Code - returns internal code from error
+func Code(err error) codes.Code {
+	s, ok := status.FromError(err)
+	if ok {
+		return s.Code()
+	}
+	return codes.Unknown
+}
