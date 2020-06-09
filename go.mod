@@ -1,4 +1,4 @@
-module github.com/Sainarasimhan/error
+module github.com/Sainarasimhan/go-error
 
 go 1.13
 
